@@ -1,0 +1,189 @@
+
+h1 {
+  font-family: 'optima';
+  font-size: 140px;
+  font-weight:100;
+  color: #748892;
+  Display: flex;
+  justify-content:center;
+  padding-top:20px;
+  padding-bottom:17px;
+  margin:0;
+}
+
+h2{
+  font-family: 'optima';
+  font-size: 22px;
+  font-weight:100;
+  color: #89b0ae;
+  Display: flex;
+  justify-content:center;
+  padding-bottom:10px;
+  margin:0
+}
+
+h3{
+  color:#d0dfe5;
+  margin-left:35px;
+  padding-top: 5px;
+  margin-bottom:10px;
+  font-size: 40px;
+  -webkit-text-stroke: 2px #CBAEAA;
+
+}
+
+h4{
+  color: #faf9f9;
+  margin: 0;
+  padding: 0;
+
+}
+
+img{
+  height: 200px;
+  width: 300px;
+  Object-fit: cover;
+  padding-bottom:15px;
+  margin-left:10px;
+  margin-right:10px;
+  Display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+.media{
+  position:relative
+}
+
+.layer {
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 93%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:10px;
+  margin-right:10px;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+#myHeader li{
+  display: inline-block;
+  margin: 8px 0;
+  padding:0;
+}
+
+
+#myInput {
+  background-image: url("https://cdn.glitch.com/7f70b022-b9c5-485f-ab2f-976664e4b685%2Fimage-3.png?v=1598419995663"); /* Add a search icon to input */
+  background-position: 3px 2px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  background-color: #F0F0F0;
+  width: 95.5%; /* Full-width */
+  font-size: 18px; /* Increase font-size */
+  padding: 12px 11px 12px 50px; /* Add some padding */
+  border: 1px solid #d0dfe5; /* Add a grey border */
+}
+
+p {
+  font-family: 'optima', monospace;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing:1px;
+  color: #555b6e;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 94%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.8s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
+
+.top {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom:9px;
+  padding-left:10px;
+  background-color:#CBAEAA;
+  position:sticky;
+  z-index:1;
+  top:0;
+}
+
+.star {
+  display: inline;
+  font-size:35px;
+  border-right: 3px solid #CBAEAA;
+  padding-bottom: 5px;
+}
+
+.star a {
+  display: block;
+  color: #fff1e0;
+/*  -webkit-text-stroke: 2px #555b6e; */
+  float:left;
+  padding-bottom: 0;
+  margin-bottom:0;
+  text-decoration: none;
+  border-left: 13px solid #CBAEAA;
+  border-right: 13px solid #CBAEAA;
+}
+
+.star a:hover {
+  background-color: #d0dfe5;
+  color: #5F758D;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #CBAEAA; /* Set a background color */
+  color: #F0E3D3; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-family: 'optima';
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #d0dfe5; /* Add a dark-grey background on hover */
+  color: #555b6e;
+}
