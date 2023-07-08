@@ -1,10 +1,10 @@
 # turtle-dramas
 > Personal Asian TV shows ranking website :turtle:
 
-[Visit the site :)](https://turtledramas.glitch.me)
+## :star:[Visit the site :)](https://turtledramas.glitch.me):star:
 
-*Includes Korean and Chinese dramas:*
-
+*Includes Korean and Chinese dramas*
+----
 ### Features:
 - Search bar
 - Navigation bar for ★ ratings
