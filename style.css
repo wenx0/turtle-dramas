@@ -1,0 +1,127 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-family: 'optima';
+  font-size: 140px;
+  font-weight:200;
+  Display: flex;
+  justify-content:center;
+  padding-top:60px;
+  margin:0;
+}
+
+img{
+  width: 400px;
+  height:300px;
+  Object-fit: contain;
+}
+
+p{
+  Display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+
+
+@import "compass/css3";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  transform: translate3d(0,0,0);
+}
+
+.turtle {
+  width: 1em;
+  height: .75em;
+  background: #1abc9c;
+  font-size: 150px;
+  margin-left:40px;
+  border-radius: .7em .7em .2em .2em;
+  border-bottom: .15em solid #16a085;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: go 5s infinite;
+}
+
+.head, .tail, .foot {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.head {
+  width: .25em;
+  height: .25em;
+  background: #16a085;
+  border-radius: .1em .05em .1em 0;
+  /*transform: translate(x,y);*/
+  transform: translateZ(-1em) translate(.7em, .35em);
+  animation: look-out 5s infinite;
+}
+
+.tail {
+  width: .15em;
+  height: .15em;
+  background: #16a085;
+  border-radius: .2em 0 0 0;
+  transform: translateZ(-1em) translate(0,.45em);
+  animation: tail-out 5s infinite;
+}
+
+.foot {
+  width: .1em;
+  height: .15em;
+  background: #138a72;
+  border-radius: .15em .15em .15em 0;
+  top: .65em;
+  animation: feet-out 5s infinite;
+}
+
+.front {
+  left: .7em;
+}
+
+.back {
+  left: .2em;
+}
+
+
+@keyframes tail-out {
+  0% {transform: translateZ(-1em) translate(0,.45em);}
+  10% {transform: translateZ(-1em) translate(-0.15em,.45em);}
+  30% {transform: translateZ(-1em) translate(0,.45em);}
+  50% {transform: translateZ(-1em) translate(-0.15em,.45em);}
+}
+
+@keyframes feet-out {
+  10%, 50% {transform: rotate(0);}
+  0%, 30%, 100% {transform: rotate(-70deg);} 
+}
+
+@keyframes look-out {
+ 0%, 30% {
+   transform: translateZ(-1em) translate(.7em,.35em);
+ }  
+ 10%, 50% {
+   transform: translateZ(-1em) translate(1em,.35em);
+ } 
+}
+
+@keyframes go {
+  30% {
+    transform: translateX(.5em);
+  }
+  50% {
+    transform: translateX(1em);
+  }
+}
